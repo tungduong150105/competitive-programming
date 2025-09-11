@@ -1,0 +1,85 @@
+#include "bits/stdc++.h"
+
+namespace std {
+  template <class Fun>
+  class y_combinator_result {
+    Fun fun_;
+  public:
+    template<class T>
+    explicit y_combinator_result(T &&fun): fun_(std::forward<T>(fun)) {}
+    template<class ...Args>
+    decltype(auto) operator()(Args &&...args) {
+      return fun_(std::ref(*this), std::forward<Args>(args)...);
+    }
+  };
+  template<class Fun>
+  decltype(auto) y_combinator(Fun &&fun) {
+    return y_combinator_result<std::decay_t<Fun>>(std::forward<Fun>(fun));
+  }
+} // namespace std
+
+int main() {
+  std::ios_base::sync_with_stdio(false);
+  std::cin.tie(nullptr);
+
+  int T; std::cin >> T;
+  for (int case_num = 0; case_num < T; ++case_num) {
+    int n; std::cin >> n;
+    std::vector<int> c(n);
+    for (int i = 0; i < n; ++i) {
+      std::cin >> c[i];
+    }
+
+    int root = -1;
+    std::vector<std::vector<int>> adj(n);
+    for (int i = 0; i < n - 1; ++i) {
+      int u, v; std::cin >> u >> v;
+      --u, --v;
+      adj[u].push_back(v);
+      adj[v].push_back(u);
+      if (root == -1) {
+        root = u;
+      }
+    }
+
+    std::vector<int> dom(n, 0);
+    std::y_combinator([&](auto self, int u, int p) -> std::pair<std::set<std::pair<int, int>>, std::pair<int, int>> {
+      std::pair<int, int> mx = std::make_pair(c[u], 1);
+      std::set<std::pair<int, int>> res;
+      for (int v : adj[u]) {
+        if (v == p) {
+          continue;
+        }
+        auto [value, mx1] = self(v, u);
+        dom[u] += dom[v];
+        if (int(value.size()) > int(res.size())) {
+          std::swap(value, res);
+          std::swap(mx, mx1);
+        }
+        for (auto [_u, _cnt] : value) {
+          auto it = res.lower_bound(std::make_pair(_u, 0));
+          if ((*it).first == _u) {
+            res.erase(res.find(*it));
+            res.insert(std::make_pair(_u, (*it).second + _cnt));
+            if ((*it).second + _cnt > mx.second) {
+              mx = std::make_pair(_u, *it.second + _cnt);
+            }
+          } else {
+            res.insert(std::make_pair(_u, _cnt));
+            if (_cnt > mx.second) {
+              mx = std::make_pair(_u, _cnt);
+            }
+          }
+        }
+      }
+      dom[u] += mx.first;
+      return std::make_pair(res, mx);
+    })(root, -1);
+
+    for (int i = 0; i < n; ++i) {
+      std::cout << dom[i] << " \n"[i == n - 1];
+    }
+  }
+
+  return 0;
+}

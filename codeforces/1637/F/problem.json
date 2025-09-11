@@ -1,0 +1,39 @@
+{
+  "name": "F. Towers",
+  "group": "Codeforces - Codeforces Global Round 19",
+  "url": "https://codeforces.com/contest/1637/problem/F",
+  "interactive": false,
+  "memoryLimit": 256,
+  "timeLimit": 2000,
+  "tests": [
+    {
+      "input": "3\n1 2 1\n1 2\n2 3\n",
+      "output": "4\n"
+    },
+    {
+      "input": "5\n1 3 3 1 3\n1 3\n5 4\n4 3\n2 3\n",
+      "output": "7\n"
+    },
+    {
+      "input": "2\n6 1\n1 2\n",
+      "output": "12\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "FTowers"
+    }
+  },
+  "batch": {
+    "id": "d5e4b4e0-164c-447f-9965-2828a8998dc9",
+    "size": 1
+  }
+}

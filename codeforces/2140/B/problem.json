@@ -1,0 +1,31 @@
+{
+  "name": "B. Another Divisibility Problem",
+  "group": "Codeforces - Codeforces Round 1049 (Div. 2)",
+  "url": "https://codeforces.com/contest/2140/problems",
+  "interactive": false,
+  "memoryLimit": 256,
+  "timeLimit": 1000,
+  "tests": [
+    {
+      "input": "6\n8\n42\n1000\n66666\n106344\n9876543\n",
+      "output": "1\n12\n998\n7872\n8190\n174036\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "BAnotherDivisibilityProblem"
+    }
+  },
+  "batch": {
+    "id": "654bb6bc-f981-4623-ac4e-9aa20a999f91",
+    "size": 7
+  }
+}
