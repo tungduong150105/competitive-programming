@@ -1,0 +1,31 @@
+{
+  "name": "E. Blood Cousins",
+  "group": "Codeforces - Codeforces Round 130 (Div. 2)",
+  "url": "https://codeforces.com/contest/208/problem/E",
+  "interactive": false,
+  "memoryLimit": 256,
+  "timeLimit": 2000,
+  "tests": [
+    {
+      "input": "6\n0 1 1 0 4 4\n7\n1 1\n1 2\n2 1\n2 2\n4 1\n5 1\n6 1\n",
+      "output": "0 0 1 0 0 1 1\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "EBloodCousins"
+    }
+  },
+  "batch": {
+    "id": "ee1b6117-8b08-4177-8acb-134bd7fe7161",
+    "size": 1
+  }
+}

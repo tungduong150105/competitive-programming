@@ -1,0 +1,31 @@
+{
+  "name": "A. Sublime Sequence",
+  "group": "Codeforces - Codeforces Round 1050 (Div. 4)",
+  "url": "https://codeforces.com/contest/2148/problems",
+  "interactive": false,
+  "memoryLimit": 256,
+  "timeLimit": 1000,
+  "tests": [
+    {
+      "input": "4\n1 4\n2 5\n3 6\n4 7\n",
+      "output": "0\n2\n0\n4\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "ASublimeSequence"
+    }
+  },
+  "batch": {
+    "id": "067398ed-fc59-4c28-95bf-21a8113d8ba2",
+    "size": 7
+  }
+}

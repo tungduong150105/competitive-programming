@@ -1,0 +1,31 @@
+{
+  "name": "B. Lasers",
+  "group": "Codeforces - Codeforces Round 1050 (Div. 4)",
+  "url": "https://codeforces.com/contest/2148/problems",
+  "interactive": false,
+  "memoryLimit": 256,
+  "timeLimit": 2000,
+  "tests": [
+    {
+      "input": "2\n1 1 2 2\n1\n1\n2 1 100000 100000\n42 58\n32\n",
+      "output": "2\n3\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "BLasers"
+    }
+  },
+  "batch": {
+    "id": "067398ed-fc59-4c28-95bf-21a8113d8ba2",
+    "size": 7
+  }
+}

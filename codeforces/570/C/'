@@ -1,0 +1,70 @@
+#include "bits/stdc++.h"
+
+namespace std {
+  template <class Fun>
+  class y_combinator_result {
+    Fun fun_;
+  public:
+    template<class T>
+    explicit y_combinator_result(T &&fun): fun_(std::forward<T>(fun)) {}
+    template<class ...Args>
+    decltype(auto) operator()(Args &&...args) {
+      return fun_(std::ref(*this), std::forward<Args>(args)...);
+    }
+  };
+  template<class Fun>
+  decltype(auto) y_combinator(Fun &&fun) {
+    return y_combinator_result<std::decay_t<Fun>>(std::forward<Fun>(fun));
+  }
+} // namespace std
+
+int main() {
+  std::ios_base::sync_with_stdio(false);
+  std::cin.tie(nullptr);
+
+  int T; std::cin >> T;
+  for (int case_num = 0; case_num < T; ++case_num) {
+    int n, m; std::cin >> n >> m;
+    std::vector adj(n, std::vector<int> ());
+    for (int i = 1; i < n; ++i) {
+      int p; std::cin >> p; --p;
+      adj[p].push_back(i);
+    }
+    std::string s; std::cin >> s;
+    int timer = 1;
+    std::vector<int> base, base2;
+    std::vector<int> in(n, 0), ot(n, 0);
+    std::vector<int> dep(n, 0);
+    std::y_combinator([&](auto self, int u, int p) -> void {
+      in[u] = timer++;
+      base.push_back(dep[u]); // save dep of each node in order
+      base2.push_back(u);
+      for (int v : adj[u]) {
+        if (v == p) continue;
+        dep[v] = dep[u] + 1;
+        self(u, v);
+      }
+      ot[u] = timer;
+    })(0, -1);
+    std::vector<std::pair<int, int>> queries;
+    std::vector g(timer + 1, std::vector<int> ());
+    for (int i = 0; i < m; ++i) {
+      int v, h; std::cin >> v >> h; --v;
+      queries.emplace_back(v, h);
+      g[in[v] - 1].push_back(h);
+      g[ot[v]].push_back(h);
+    }
+    std::vector<int> oddc(m, 0);
+    for (int i = 0; i < 26; ++i) {
+      std::vector<int> cnt(n + 1, 0);
+      std::vector gans(n, std::set<std::pair<int, int>>());
+      for (int j = 0; j < int(base.size()); ++j) {
+        if (base2[j] - 'a' == i) {
+          ++cnt[base[j]];
+        }
+      }
+    }
+  }
+
+  return 0;
+}

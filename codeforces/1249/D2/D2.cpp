@@ -1,21 +1,21 @@
-#include "bits/stdc++.h" 
+#include "bits/stdc++.h"
 
 int main() {
   std::ios_base::sync_with_stdio(false);
   std::cin.tie(nullptr);
 
-  int n, k; std::cin >> n >> k;
+  int n, k;
+  std::cin >> n >> k;
   std::vector<std::pair<int, int>> a;
   for (int i = 0; i < n; ++i) {
-    int l, r; std::cin >> l >> r;
+    int l, r;
+    std::cin >> l >> r;
     a.emplace_back(l, r);
   }
 
   std::vector<int> p(n);
   std::iota(p.begin(), p.end(), 0);
-  std::sort(p.begin(), p.end(), [&](int i, int j) {
-    return a[i] < a[j];
-  });
+  std::sort(p.begin(), p.end(), [&](int i, int j) { return a[i] < a[j]; });
 
   std::vector<int> ans;
   std::vector<int> s(200005, 0);

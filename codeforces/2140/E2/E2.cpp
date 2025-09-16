@@ -16,29 +16,38 @@ struct ModNum {
   static constexpr int MOD = _MOD;
   static_assert(MOD > 0, "MOD must be positive");
   int v;
-  ModNum() : v(0) {}
+
+  ModNum() : v(0) {
+  }
+
   ModNum(int64_t _v) : v(int(_v % MOD)) {
     if (v < 0) {
       v += MOD;
     }
   }
+
   int val() const {
     return v;
   }
+
   ModNum inv() const {
     return power(*this, MOD - 2);
   }
+
   ModNum neg() const {
     ModNum res;
     res.v = v ? MOD - v : 0;
     return res;
   }
+
   ModNum operator-() const {
     return neg();
   }
+
   ModNum operator+() const {
     return ModNum(*this);
   }
+
   ModNum &operator+=(const ModNum &lhs) {
     v += lhs.v;
     if (v > MOD) {
@@ -46,6 +55,7 @@ struct ModNum {
     }
     return *this;
   }
+
   ModNum &operator-=(const ModNum &lhs) {
     v -= lhs.v;
     if (v < 0) {
@@ -53,38 +63,48 @@ struct ModNum {
     }
     return *this;
   }
+
   ModNum &operator*=(const ModNum &lhs) {
     v = int(int64_t(v) * int64_t(lhs.v) % MOD);
     return *this;
   }
+
   ModNum &operator/=(const ModNum &lhs) {
     return *this *= lhs.inv();
   }
-  friend ModNum operator+(const ModNum & lhs, const ModNum &rhs) {
+
+  friend ModNum operator+(const ModNum &lhs, const ModNum &rhs) {
     ModNum res = lhs;
     return res += rhs;
   }
-  friend ModNum operator-(const ModNum & lhs, const ModNum &rhs) {
+
+  friend ModNum operator-(const ModNum &lhs, const ModNum &rhs) {
     ModNum res = lhs;
     return res -= rhs;
   }
-  friend ModNum operator*(const ModNum & lhs, const ModNum &rhs) {
+
+  friend ModNum operator*(const ModNum &lhs, const ModNum &rhs) {
     ModNum res = lhs;
     return res *= rhs;
   }
-  friend ModNum operator/(const ModNum & lhs, const ModNum &rhs) {
+
+  friend ModNum operator/(const ModNum &lhs, const ModNum &rhs) {
     ModNum res = lhs;
     return res /= rhs;
   }
+
   friend bool operator==(const ModNum &lhs, const ModNum &rhs) {
     return lhs.v == rhs.v;
   }
+
   friend bool operator!=(const ModNum &lhs, const ModNum &rhs) {
     return lhs.v != rhs.v;
   }
+
   friend std::ostream &operator<<(std::ostream &out, const ModNum &lhs) {
     return out << lhs.val();
   }
+
   friend std::istream &operator>>(std::istream &in, ModNum &lhs) {
     int64_t _v;
     in >> _v;
@@ -93,24 +113,26 @@ struct ModNum {
   }
 };
 
-
 int main() {
   std::ios_base::sync_with_stdio(false);
   std::cin.tie(nullptr);
 
   using Z = ModNum<1000000007>;
 
-  int T; std::cin >> T;
+  int T;
+  std::cin >> T;
   for (int case_num = 0; case_num < T; ++case_num) {
-    int n, m; std::cin >> n >> m;
+    int n, m;
+    std::cin >> n >> m;
 
-    int k; std::cin >> k;
+    int k;
+    std::cin >> k;
     std::vector<int> c(k);
     for (int i = 0; i < k; ++i) {
       std::cin >> c[i];
     }
 
-    std::vector dp(n, std::vector<int> (1 << n, 0));
+    std::vector dp(n, std::vector<int>(1 << n, 0));
     for (int i = 0; i < n; ++i) {
       for (int mask = 0; mask < (1 << n); ++mask) {
         dp[i][mask] = i % 2 == 0 ? 0 : 10;
