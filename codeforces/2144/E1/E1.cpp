@@ -167,7 +167,7 @@ int main() {
         for (int j = i; j < n; ++j) {
           if (a[j] == mx) {
             ans += pref[i] * suff[j] * power(Z(2), std::max(0, j - i - 1));
-            // std::cout << i + 1 << " " << j + 1 << " " << pref[i] << " " << suff[j] << " " << power(Z(2), std::max(0, j - i - 1)) << "\n";
+            std::cout << i + 1 << " " << j + 1 << " " << pref[i] << " " << suff[j] << " " << power(Z(2), std::max(0, j - i - 1)) << "\n";
           }
         }
       }

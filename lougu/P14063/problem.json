@@ -1,0 +1,39 @@
+{
+  "name": "P14063 [PO Final 2022] \u6d77\u6ee9 / Badstrand",
+  "group": "Luogu",
+  "url": "https://www.luogu.com.cn/problem/P14063",
+  "interactive": false,
+  "memoryLimit": 1024,
+  "timeLimit": 1000,
+  "tests": [
+    {
+      "input": "3 14\n4 7 3\n",
+      "output": "3\n"
+    },
+    {
+      "input": "4 36\n11 5 7 14\n",
+      "output": "3\n"
+    },
+    {
+      "input": "9 18\n1 5 3 4 6 2 1 2 4\n",
+      "output": "6\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "P14063POFinal2022Badstrand"
+    }
+  },
+  "batch": {
+    "id": "cc864293-272b-4de1-a18c-e74f446afb47",
+    "size": 1
+  }
+}

@@ -8,7 +8,7 @@ TARGET       := $(PROBLEM_NAME)
 SRC          := $(PROBLEM_NAME).cpp
 
 # Toolchain (override with: make CXX=g++ if you really want GCC)
-CXX ?= clang++
+CXX ?= g++
 
 # Toggle debug/sanitizers: make DEBUG=false  (default: true)
 DEBUG ?= false
@@ -16,7 +16,6 @@ DEBUG ?= false
 # ---- Flags (Clang/macOS friendly)
 BASEFLAGS := -std=c++17 -O2 -Wall -Wextra -pedantic -Wshadow -Wformat=2 \
              -Wconversion -Wfloat-equal -Wcast-qual -Wcast-align \
-             -fcolor-diagnostics
 
 SANFLAGS  := -fsanitize=address -fsanitize=undefined -fno-sanitize-recover=all \
              -fstack-protector-all -g

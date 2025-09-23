@@ -1,0 +1,39 @@
+{
+  "name": "P14065 [PO Final 2022] \u5bf9\u5f08 / Laserschack",
+  "group": "Luogu",
+  "url": "https://www.luogu.com.cn/problem/P14065",
+  "interactive": false,
+  "memoryLimit": 1024,
+  "timeLimit": 2000,
+  "tests": [
+    {
+      "input": "3 3\n.Ao\nR..\n.Ko\n",
+      "output": "2\n"
+    },
+    {
+      "input": "5 8\nA......o\n..K.o...\no....o.o\n..o..o..\nR...o..o\n",
+      "output": "4\n"
+    },
+    {
+      "input": "10 9\noo.o.oRR.\n.K.oo..R.\n....oo..R\n..R......\n..R......\nA....o.o.\n...R.....\n.....o.o.\n.........\no....o..R\n",
+      "output": "3\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "P14065POFinal2022Laserschack"
+    }
+  },
+  "batch": {
+    "id": "8dd3fed6-2ead-4c81-be4b-69505895bd05",
+    "size": 1
+  }
+}

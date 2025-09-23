@@ -1,0 +1,16 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     main
+relocations:
+  - { offset: 0x71F5, size: 0x8, addend: 0x0, symName: __ZStL8__ioinit, symObjAddr: 0x18596, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offset: 0x74EE, size: 0x8, addend: 0x0, symName: __GLOBAL__sub_I_B.cpp, symObjAddr: 0x428, symBinAddr: 0x100000A64, symSize: 0x14 }
+  - { offset: 0x7505, size: 0x8, addend: 0x0, symName: __Z41__static_initialization_and_destruction_0v, symObjAddr: 0x3EC, symBinAddr: 0x100000A28, symSize: 0x3C }
+  - { offset: 0x7520, size: 0x8, addend: 0x0, symName: __ZNK6ModNumILi1000000007EE3valEv, symObjAddr: 0x320, symBinAddr: 0x100000A10, symSize: 0x18 }
+  - { offset: 0x7548, size: 0x8, addend: 0x0, symName: __ZN6ModNumILi1000000007EEmIERKS0_, symObjAddr: 0x2C0, symBinAddr: 0x1000009B0, symSize: 0x60 }
+  - { offset: 0x757F, size: 0x8, addend: 0x0, symName: __ZN6ModNumILi1000000007EEmLERKS0_, symObjAddr: 0x240, symBinAddr: 0x100000930, symSize: 0x80 }
+  - { offset: 0x75BD, size: 0x8, addend: 0x0, symName: __ZlsRSoRK6ModNumILi1000000007EE, symObjAddr: 0x214, symBinAddr: 0x100000904, symSize: 0x2C }
+  - { offset: 0x7604, size: 0x8, addend: 0x0, symName: __ZmiRK6ModNumILi1000000007EES2_, symObjAddr: 0x1E0, symBinAddr: 0x1000008D0, symSize: 0x34 }
+  - { offset: 0x7654, size: 0x8, addend: 0x0, symName: __Z5powerI6ModNumILi1000000007EEET_S2_x, symObjAddr: 0x164, symBinAddr: 0x100000854, symSize: 0x7C }
+  - { offset: 0x76CA, size: 0x8, addend: 0x0, symName: __ZN6ModNumILi1000000007EEC1Ex, symObjAddr: 0xD0, symBinAddr: 0x1000007C0, symSize: 0x94 }
+  - { offset: 0x76F9, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x1000006F0, symSize: 0xD0 }
+...

@@ -1,0 +1,39 @@
+{
+  "name": "B - Locked Rooms",
+  "group": "AtCoder - AtCoder Beginner Contest 423",
+  "url": "https://atcoder.jp/contests/abc423/tasks/abc423_b",
+  "interactive": false,
+  "memoryLimit": 1024,
+  "timeLimit": 2000,
+  "tests": [
+    {
+      "input": "5\n0 1 0 0 1\n",
+      "output": "3\n"
+    },
+    {
+      "input": "3\n1 0 1\n",
+      "output": "2\n"
+    },
+    {
+      "input": "8\n0 0 1 1 0 1 0 0\n",
+      "output": "3\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "BLockedRooms"
+    }
+  },
+  "batch": {
+    "id": "0e24deb3-6684-408a-9a56-4a24a0767ffb",
+    "size": 1
+  }
+}

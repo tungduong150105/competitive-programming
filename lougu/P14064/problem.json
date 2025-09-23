@@ -1,0 +1,43 @@
+{
+  "name": "P14064 [PO Final 2022] \u5361\u724c / Kortlek",
+  "group": "Luogu",
+  "url": "https://www.luogu.com.cn/problem/P14064",
+  "interactive": false,
+  "memoryLimit": 1024,
+  "timeLimit": 1000,
+  "tests": [
+    {
+      "input": "2 3\n1 10\n2 0 1\n",
+      "output": "8\n"
+    },
+    {
+      "input": "3 3\n4 8 1\n5 1 2\n",
+      "output": "5\n"
+    },
+    {
+      "input": "4 5\n6 10 6 2\n1 4 0 6 3\n",
+      "output": "10\n"
+    },
+    {
+      "input": "5 5\n0 0 0 0 0\n1000000000 1000000000 1000000000 1000000000 1000000000\n",
+      "output": "5000000000\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "P14064POFinal2022Kortlek"
+    }
+  },
+  "batch": {
+    "id": "7f892970-6f4d-4bdd-95d9-7ef6d152fcbd",
+    "size": 1
+  }
+}

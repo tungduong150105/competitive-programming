@@ -1,0 +1,35 @@
+{
+  "name": "P14066 [PO Final 2022] \u5206\u7ec4 / Triangeltal",
+  "group": "Luogu",
+  "url": "https://www.luogu.com.cn/problem/P14066",
+  "interactive": false,
+  "memoryLimit": 1024,
+  "timeLimit": 5000,
+  "tests": [
+    {
+      "input": "10\n1 3 1 3 3 2 4 1 5 2\n",
+      "output": "YES\n3313332121\n"
+    },
+    {
+      "input": "3\n1 2 2\n",
+      "output": "NO\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "P14066POFinal2022Triangeltal"
+    }
+  },
+  "batch": {
+    "id": "035b5f99-c714-4899-b514-8f49e1456002",
+    "size": 1
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "B. Multiple Construction",
+  "group": "Codeforces - Codeforces Global Round 29 (Div. 1 + Div. 2)",
+  "url": "https://codeforces.com/contest/2147/problem/B",
+  "interactive": false,
+  "memoryLimit": 256,
+  "timeLimit": 1000,
+  "tests": [
+    {
+      "input": "3\n2\n3\n1\n",
+      "output": "1 2 1 2\n1 3 1 2 3 2\n1 1\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "BMultipleConstruction"
+    }
+  },
+  "batch": {
+    "id": "831cf5c5-a43e-4f72-ba7c-f24e7b62e0a3",
+    "size": 1
+  }
+}

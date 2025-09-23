@@ -1,0 +1,31 @@
+{
+  "name": "C. Civilization",
+  "group": "Codeforces - Codeforces Round 260 (Div. 1)",
+  "url": "https://codeforces.com/contest/455/problem/C",
+  "interactive": false,
+  "memoryLimit": 256,
+  "timeLimit": 1000,
+  "tests": [
+    {
+      "input": "6 0 6\n2 1 2\n2 3 4\n2 5 6\n2 3 2\n2 5 3\n1 1\n",
+      "output": "4\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "CCivilization"
+    }
+  },
+  "batch": {
+    "id": "17d3d505-13c4-479b-80b2-b730b4cf95e5",
+    "size": 1
+  }
+}
