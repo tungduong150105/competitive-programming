@@ -1,0 +1,47 @@
+{
+  "name": "Delete brackets",
+  "group": "NowCoder",
+  "url": "https://ac.nowcoder.com/acm/problem/21303",
+  "interactive": false,
+  "memoryLimit": 1,
+  "timeLimit": 21303000,
+  "tests": [
+    {
+      "input": "(())\n()\n",
+      "output": "Possible\n"
+    },
+    {
+      "input": "()\n()\n",
+      "output": "Possible\n"
+    },
+    {
+      "input": "(()()())\n((()))\n",
+      "output": "Impossible\n"
+    },
+    {
+      "input": "((())((())())())\n(()(())())\n",
+      "output": "Possible\n"
+    },
+    {
+      "input": "((())((())())())\n((()()()()()()))\n",
+      "output": "Impossible\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "DeleteBrackets"
+    }
+  },
+  "batch": {
+    "id": "0fd235ed-d113-4532-a81d-ef0e8516e81f",
+    "size": 1
+  }
+}

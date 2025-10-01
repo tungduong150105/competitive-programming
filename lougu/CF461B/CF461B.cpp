@@ -1,3 +1,5 @@
+#include "bits/stdc++.h"
+
 template <typename T> T mod_inv_in_range(T a, T m) {
 	// assert(0 <= a && a < m);
 	T x = a, y = m;
@@ -138,7 +140,7 @@ public:
 	}
 };
 
-using Z = ModBase<998244353>;
+using Z = ModBase<1000000007>;
 
 template <typename T> T power(T a, long long b) {
 	assert(b >= 0);
@@ -148,3 +150,31 @@ template <typename T> T power(T a, long long b) {
 	}
 	return r;
 }
+
+int main() {
+	std::ios_base::sync_with_stdio(false); std::cin.tie(nullptr);
+	int n; std::cin >> n;
+	std::vector adj(n, std::vector<int> ());
+	for (int i = 1; i < n; ++i) {
+	    int p; std::cin >> p;
+		adj[i].push_back(p);
+		adj[p].push_back(i);
+		// std::cout << i + 1 << " " << p + 1 << "\n";
+	}
+	std::vector<int> x(n);
+	for (int i = 0; i < n; ++i) std::cin >> x[i];
+	std::vector dp(n, std::vector<Z> (2, 0));
+	auto dfs = [&](auto &&self, int u, int p) -> void {
+		dp[u][x[u]] = 1;
+		for (int v : adj[u]) {
+			if (v == p) continue;
+			self(self, v, u);
+			dp[u][1] = dp[u][1] * dp[v][0] + dp[u][1] * dp[v][1] + dp[u][0] * dp[v][1];
+			dp[u][0] = dp[u][0] * dp[v][0] + dp[u][0] * dp[v][1];
+		}
+	};
+	dfs(dfs, 0, -1);
+	std::cout << dp[0][1] << "\n";
+	return 0;
+}
+// 42'11

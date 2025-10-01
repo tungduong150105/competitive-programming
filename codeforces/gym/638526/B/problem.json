@@ -1,0 +1,35 @@
+{
+  "name": "B. We Need More Bosses",
+  "group": "Codeforces - Day 5 Graph Basics (BFSDFS shortest paths)",
+  "url": "https://codeforces.com/gym/638526/problems",
+  "interactive": false,
+  "memoryLimit": 256,
+  "timeLimit": 2000,
+  "tests": [
+    {
+      "input": "5 5\n1 2\n2 3\n3 1\n4 1\n5 2\n",
+      "output": "2\n"
+    },
+    {
+      "input": "4 3\n1 2\n4 3\n3 2\n",
+      "output": "3\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "BWeNeedMoreBosses"
+    }
+  },
+  "batch": {
+    "id": "9e42f211-81b3-47ea-bb19-bf145e542d45",
+    "size": 3
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "D. Add to Neighbour and Remove",
+  "group": "Codeforces - Codeforces Round 690 (Div. 3)",
+  "url": "https://codeforces.com/problemset/problem/1462/D",
+  "interactive": false,
+  "memoryLimit": 256,
+  "timeLimit": 3000,
+  "tests": [
+    {
+      "input": "4\n5\n3 1 6 6 2\n4\n1 2 2 1\n3\n2 2 2\n4\n6 3 2 1\n",
+      "output": "4\n2\n0\n2\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "DAddToNeighbourAndRemove"
+    }
+  },
+  "batch": {
+    "id": "ce5429f1-045d-46c0-9c33-3d2d35f89809",
+    "size": 1
+  }
+}

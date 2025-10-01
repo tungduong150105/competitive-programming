@@ -1,0 +1,43 @@
+{
+  "name": "codeforces",
+  "group": "NowCoder",
+  "url": "https://ac.nowcoder.com/acm/problem/21314",
+  "interactive": false,
+  "memoryLimit": 2,
+  "timeLimit": 21314000,
+  "tests": [
+    {
+      "input": "1 74\n502\n2\n47\n",
+      "output": "408\n"
+    },
+    {
+      "input": "2 40000\n100000 100000\n1 100000\n50000 30000\n",
+      "output": "0\n"
+    },
+    {
+      "input": "3 75\n250 500 1000\n2 4 8\n25 25 25\n",
+      "output": "1200\n"
+    },
+    {
+      "input": "3 30\n100 100 100000\n1 1 100\n15 15 30\n",
+      "output": "97000\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "Codeforces"
+    }
+  },
+  "batch": {
+    "id": "c2d4cb13-3045-43db-bb72-c0ab158aadea",
+    "size": 1
+  }
+}

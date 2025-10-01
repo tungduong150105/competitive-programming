@@ -1,0 +1,31 @@
+{
+  "name": "B. Worms",
+  "group": "Codeforces - Day 2 Range Queries DS Basics",
+  "url": "https://codeforces.com/gym/638476/problems",
+  "interactive": false,
+  "memoryLimit": 256,
+  "timeLimit": 1000,
+  "tests": [
+    {
+      "input": "5\n2 7 3 4 9\n3\n1 25 11\n",
+      "output": "1\n5\n3\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "BWorms"
+    }
+  },
+  "batch": {
+    "id": "8fa321ed-992f-44c6-8760-1c3e105f19ca",
+    "size": 3
+  }
+}

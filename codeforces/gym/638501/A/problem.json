@@ -1,0 +1,31 @@
+{
+  "name": "A. Binary String To Subsequences",
+  "group": "Codeforces - Day 4 Greedy Sorting",
+  "url": "https://codeforces.com/gym/638501/problems",
+  "interactive": false,
+  "memoryLimit": 256,
+  "timeLimit": 2000,
+  "tests": [
+    {
+      "input": "4\n4\n0011\n6\n111111\n5\n10101\n8\n01010000\n",
+      "output": "2\n1 2 2 1\n6\n1 2 3 4 5 6\n1\n1 1 1 1 1\n4\n1 1 1 1 1 2 3 4\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "ABinaryStringToSubsequences"
+    }
+  },
+  "batch": {
+    "id": "db4fd87c-3c94-4150-a216-3812f7bd5469",
+    "size": 3
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "C - Attention",
+  "group": "AtCoder - AtCoder Beginner Contest 098",
+  "url": "https://atcoder.jp/contests/abc098/tasks/arc098_a",
+  "interactive": false,
+  "memoryLimit": 1024,
+  "timeLimit": 2000,
+  "tests": [
+    {
+      "input": "5\nWEEWW\n",
+      "output": "1\n"
+    },
+    {
+      "input": "12\nWEWEWEEEWWWE\n",
+      "output": "4\n"
+    },
+    {
+      "input": "8\nWWWWWEEE\n",
+      "output": "3\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "CAttention"
+    }
+  },
+  "batch": {
+    "id": "cd119e0b-0054-4d5a-8879-c98c80c9855a",
+    "size": 1
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "D - Staircase Sequences",
+  "group": "AtCoder - AtCoder Beginner Contest 190",
+  "url": "https://atcoder.jp/contests/abc190/tasks/abc190_d",
+  "interactive": false,
+  "memoryLimit": 1024,
+  "timeLimit": 2000,
+  "tests": [
+    {
+      "input": "12\n",
+      "output": "4\n"
+    },
+    {
+      "input": "1\n",
+      "output": "2\n"
+    },
+    {
+      "input": "963761198400\n",
+      "output": "1920\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "DStaircaseSequences"
+    }
+  },
+  "batch": {
+    "id": "3729dba2-c008-4d82-9c15-2ca84e0bfde9",
+    "size": 1
+  }
+}

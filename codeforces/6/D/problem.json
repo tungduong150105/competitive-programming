@@ -1,0 +1,35 @@
+{
+  "name": "D. Lizards and Basements 2",
+  "group": "Codeforces - Codeforces Beta Round 6 (Div. 2 Only)",
+  "url": "https://codeforces.com/contest/6/problem/D",
+  "interactive": false,
+  "memoryLimit": 64,
+  "timeLimit": 2000,
+  "tests": [
+    {
+      "input": "3 2 1\n2 2 2\n",
+      "output": "3\n2 2 2\n"
+    },
+    {
+      "input": "4 3 1\n1 4 1 1\n",
+      "output": "4\n2 2 3 3\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "DLizardsAndBasements2"
+    }
+  },
+  "batch": {
+    "id": "3ed49b8f-2c5f-4eeb-88fe-6ef6c3402f34",
+    "size": 1
+  }
+}

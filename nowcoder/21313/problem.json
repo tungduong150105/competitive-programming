@@ -1,0 +1,43 @@
+{
+  "name": "\u7f8e\u4e3d\u5e8f\u5217",
+  "group": "NowCoder",
+  "url": "https://ac.nowcoder.com/acm/problem/21313",
+  "interactive": false,
+  "memoryLimit": 2,
+  "timeLimit": 21313000,
+  "tests": [
+    {
+      "input": "2\n3 -1\n",
+      "output": "4\n"
+    },
+    {
+      "input": "3\n5 3 -1\n",
+      "output": "2\n"
+    },
+    {
+      "input": "3\n-1 0 40\n",
+      "output": "0\n"
+    },
+    {
+      "input": "11\n-1 40 -1 -1 -1 10 -1 -1 -1 21 -1\n",
+      "output": "579347890\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "Task"
+    }
+  },
+  "batch": {
+    "id": "8cf6cff4-f58b-4f2c-93b6-2203d6eeca90",
+    "size": 1
+  }
+}

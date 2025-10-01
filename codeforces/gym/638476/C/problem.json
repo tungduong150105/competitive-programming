@@ -1,0 +1,39 @@
+{
+  "name": "C. Tufurama",
+  "group": "Codeforces - Day 2 Range Queries DS Basics",
+  "url": "https://codeforces.com/gym/638476/problems",
+  "interactive": false,
+  "memoryLimit": 256,
+  "timeLimit": 2000,
+  "tests": [
+    {
+      "input": "5\n1 2 3 4 5\n",
+      "output": "0\n"
+    },
+    {
+      "input": "3\n8 12 7\n",
+      "output": "3\n"
+    },
+    {
+      "input": "3\n3 2 1\n",
+      "output": "2\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "CTufurama"
+    }
+  },
+  "batch": {
+    "id": "8fa321ed-992f-44c6-8760-1c3e105f19ca",
+    "size": 3
+  }
+}

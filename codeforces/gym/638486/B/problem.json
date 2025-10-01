@@ -1,0 +1,35 @@
+{
+  "name": "B. Books",
+  "group": "Codeforces - Day 3  Binary Search Two Pointers",
+  "url": "https://codeforces.com/gym/638486/problems",
+  "interactive": false,
+  "memoryLimit": 256,
+  "timeLimit": 2000,
+  "tests": [
+    {
+      "input": "4 5\n3 1 2 1\n",
+      "output": "3\n"
+    },
+    {
+      "input": "3 3\n2 2 3\n",
+      "output": "1\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "BBooks"
+    }
+  },
+  "batch": {
+    "id": "d6759935-e8f0-4037-b0c2-76326657f0d4",
+    "size": 3
+  }
+}

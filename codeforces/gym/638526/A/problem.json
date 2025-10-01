@@ -1,0 +1,43 @@
+{
+  "name": "A. Fox And Names",
+  "group": "Codeforces - Day 5 Graph Basics (BFSDFS shortest paths)",
+  "url": "https://codeforces.com/gym/638526/problems",
+  "interactive": false,
+  "memoryLimit": 256,
+  "timeLimit": 2000,
+  "tests": [
+    {
+      "input": "3\nrivest\nshamir\nadleman\n",
+      "output": "bcdefghijklmnopqrsatuvwxyz\n"
+    },
+    {
+      "input": "10\ntourist\npetr\nwjmzbmr\nyeputons\nvepifanov\nscottwu\noooooooooooooooo\nsubscriber\nrowdark\ntankengineer\n",
+      "output": "Impossible\n"
+    },
+    {
+      "input": "10\npetr\negor\nendagorion\nfeferivan\nilovetanyaromanova\nkostka\ndmitriyh\nmaratsnowbear\nbredorjaguarturnik\ncgyforever\n",
+      "output": "aghjlnopefikdmbcqrstuvwxyz\n"
+    },
+    {
+      "input": "7\ncar\ncare\ncareful\ncarefully\nbecarefuldontforgetsomething\notherwiseyouwillbehacked\ngoodluck\n",
+      "output": "acbdefhijklmnogpqrstuvwxyz\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "AFoxAndNames"
+    }
+  },
+  "batch": {
+    "id": "9e42f211-81b3-47ea-bb19-bf145e542d45",
+    "size": 3
+  }
+}

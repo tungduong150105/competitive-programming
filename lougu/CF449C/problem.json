@@ -1,0 +1,39 @@
+{
+  "name": "C. Jzzhu and Apples",
+  "group": "Codeforces - Codeforces Round 257 (Div. 1)",
+  "url": "https://codeforces.com/problemset/problem/449/C",
+  "interactive": false,
+  "memoryLimit": 256,
+  "timeLimit": 1000,
+  "tests": [
+    {
+      "input": "6\n",
+      "output": "2\n6 3\n2 4\n"
+    },
+    {
+      "input": "9\n",
+      "output": "3\n9 3\n2 4\n6 8\n"
+    },
+    {
+      "input": "2\n",
+      "output": "0\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "CJzzhuAndApples"
+    }
+  },
+  "batch": {
+    "id": "b357312a-26f1-4a82-ad45-d5aa03df8255",
+    "size": 1
+  }
+}

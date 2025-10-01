@@ -1,0 +1,43 @@
+{
+  "name": "CF706C Hard problem",
+  "group": "Luogu",
+  "url": "https://www.luogu.com.cn/problem/CF706C",
+  "interactive": false,
+  "memoryLimit": 250,
+  "timeLimit": 1000,
+  "tests": [
+    {
+      "input": "2\n1 2\nba\nac\n",
+      "output": "1\n"
+    },
+    {
+      "input": "3\n1 3 1\naa\nba\nac\n",
+      "output": "1\n"
+    },
+    {
+      "input": "2\n5 5\nbbb\naaa\n",
+      "output": "-1\n"
+    },
+    {
+      "input": "2\n3 3\naaa\naa\n",
+      "output": "-1\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "CF706CHardProblem"
+    }
+  },
+  "batch": {
+    "id": "77b475a6-a647-4357-bae3-79381eb5e74d",
+    "size": 1
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "C. Minimize The Integer",
+  "group": "Codeforces - Day 3  Binary Search Two Pointers",
+  "url": "https://codeforces.com/gym/638486/problems",
+  "interactive": false,
+  "memoryLimit": 256,
+  "timeLimit": 2000,
+  "tests": [
+    {
+      "input": "3\n0709\n1337\n246432\n",
+      "output": "0079\n1337\n234642\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "CMinimizeTheInteger"
+    }
+  },
+  "batch": {
+    "id": "d6759935-e8f0-4037-b0c2-76326657f0d4",
+    "size": 3
+  }
+}

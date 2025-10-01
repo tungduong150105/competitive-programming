@@ -1,0 +1,39 @@
+{
+  "name": "E. Exposition",
+  "group": "Codeforces - Codeforces Beta Round 6 (Div. 2 Only)",
+  "url": "https://codeforces.com/contest/6/problem/E",
+  "interactive": false,
+  "memoryLimit": 64,
+  "timeLimit": 1500,
+  "tests": [
+    {
+      "input": "3 3\n14 12 10\n",
+      "output": "2 2\n1 2\n2 3\n"
+    },
+    {
+      "input": "2 0\n10 10\n",
+      "output": "2 1\n1 2\n"
+    },
+    {
+      "input": "4 5\n8 19 10 13\n",
+      "output": "2 1\n3 4\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "EExposition"
+    }
+  },
+  "batch": {
+    "id": "47ca71c5-9ce8-4f5a-82b8-76c93d65a386",
+    "size": 1
+  }
+}

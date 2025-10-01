@@ -1,0 +1,43 @@
+{
+  "name": "B. Increasing Subsequence (easy version)",
+  "group": "Codeforces - Day 4 Greedy Sorting",
+  "url": "https://codeforces.com/gym/638501/problems",
+  "interactive": false,
+  "memoryLimit": 256,
+  "timeLimit": 2000,
+  "tests": [
+    {
+      "input": "5\n2 1 5 4 3\n",
+      "output": "4\nLRRR\n"
+    },
+    {
+      "input": "7\n1 3 5 6 7 4 2\n",
+      "output": "7\nLRLRLLL\n"
+    },
+    {
+      "input": "3\n1 2 3\n",
+      "output": "3\nLLL\n"
+    },
+    {
+      "input": "4\n1 2 4 3\n",
+      "output": "4\nLLRL\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "BIncreasingSubsequenceEasyVersion"
+    }
+  },
+  "batch": {
+    "id": "db4fd87c-3c94-4150-a216-3812f7bd5469",
+    "size": 3
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "CF706B Interesting drink",
+  "group": "Luogu",
+  "url": "https://www.luogu.com.cn/problem/CF706B",
+  "interactive": false,
+  "memoryLimit": 250,
+  "timeLimit": 2000,
+  "tests": [
+    {
+      "input": "5\n3 10 8 6 11\n4\n1\n10\n3\n11\n",
+      "output": "0\n4\n1\n5\n"
+    }
+  ],
+  "testType": "single",
+  "input": {
+    "type": "stdin"
+  },
+  "output": {
+    "type": "stdout"
+  },
+  "languages": {
+    "java": {
+      "mainClass": "Main",
+      "taskClass": "CF706BInterestingDrink"
+    }
+  },
+  "batch": {
+    "id": "72f5cb71-7bc9-4f3c-802a-5b33ba1f4461",
+    "size": 1
+  }
+}
